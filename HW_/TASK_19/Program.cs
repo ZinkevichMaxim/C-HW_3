@@ -1,9 +1,20 @@
 ﻿// Задача 19
 // Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
 
-Console.WriteLine("Введит пятизначное число");
-int x = int.Parse(Console.ReadLine());
+int x = Prompt("Введите пятизначное число: ");
+Polidrome(x);
 
+
+
+int Prompt(string massage)
+{
+Console.WriteLine("Введит пятизначное число");
+int num = int.Parse(Console.ReadLine());
+return num;
+}
+
+void Polidrome(int num)
+{ 
 int x1 = x % 10;
 int x2 = x / 10 % 10;
 int x3 = x / 100 % 10;
@@ -18,6 +29,7 @@ if (x1 == x5 && x2 == x4)
 else
 {
     Console.WriteLine("Это число - НЕ полидром");
+}
 }
 
 
