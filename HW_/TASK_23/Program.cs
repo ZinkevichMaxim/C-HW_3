@@ -8,7 +8,6 @@
 //     return num;
 
 int num = Prompt ("Введите число: ");
-int count = 1;
 CubOfDigit(num);
 
 
