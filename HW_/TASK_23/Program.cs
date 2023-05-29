@@ -3,17 +3,33 @@
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
 
+//     Console.Write(message);
+//     int num = int.Parse(Console.ReadLine());
+//     return num;
 
-Console.WriteLine("Введите целое число");
-int nomber = int.Parse(Console.ReadLine());
+int num = Prompt ("Введите число: ");
 int count = 1;
+CubOfDigit(num);
 
-while (count <= nomber)
+
+int Prompt (string massage)
+{
+Console.Write(massage);
+int number = int.Parse(Console.ReadLine());
+return number;
+}
+
+void CubOfDigit(int number)
+{
+int count = 1;
+while (count <= number)
 {
     int cubnomber = count * count * count;
     Console.Write(cubnomber + " / ");
     count = count + 1;
 }
+}
+
 
 
 
