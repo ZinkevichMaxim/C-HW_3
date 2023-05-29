@@ -13,7 +13,7 @@ int num = int.Parse(Console.ReadLine());
 return num;
 }
 
-void Polidrome(int num)
+void Polidrome(int X)
 { 
 int x1 = x % 10;
 int x2 = x / 10 % 10;
